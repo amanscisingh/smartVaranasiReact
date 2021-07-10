@@ -1,6 +1,6 @@
 import './App.css';
 import Top from './components/Top';
-import Bottom from './components/Bottom';
+import Footer from './components/Footer';
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -9,10 +9,10 @@ import Bottom from './components/Bottom';
 // } from "react-router-dom";
 function App() {
   return (
-    <>
+    <div className="firstContainer">
             <Top/>
-            <Bottom/>
-    </>
+            <Footer/>
+    </div>
   );
 }
 

@@ -1,8 +1,8 @@
 import React from 'react'
-import './Bottom.css'
-import { Link } from 'react-router-dom';
+import './Footer.css'
+// import { Link } from 'react-router-dom';
 // import im from '../qex.jpg'
-function Bottom() {
+function Footer() {
     function click(e) {
         e.preventDefault();
         window.open("/");
@@ -10,7 +10,7 @@ function Bottom() {
     return (
         <div className="row">
             <div className="column" onClick={click}>
-            Waste
+                Waste
             </div>
             <div className="column" onClick={click}>
                 Pollution
@@ -27,4 +27,4 @@ function Bottom() {
     )
 }
 
-export default Bottom
+export default Footer
