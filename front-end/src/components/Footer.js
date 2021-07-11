@@ -1,29 +1,36 @@
 import React from 'react'
 import './Footer.css'
-// import { Link } from 'react-router-dom';
-// import im from '../qex.jpg'
+import waste from '../images/waste.png'
+import traffic from '../images/traffic.png'
+import pollution from '../images/pollution.png'
+import other from '../images/other.png'
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 function Footer() {
-    function click(e) {
-        e.preventDefault();
-        window.open("/");
-      }
     return (
-        <div className="row">
-            <div className="column" onClick={click}>
-                Waste
-            </div>
-            <div className="column" onClick={click}>
-                Pollution
-            </div>
-            <div className="column" onClick={click}>
-                Traffic
-            </div>
-            <div className="column" onClick={click}>
-                Other
-            </div>
-            
+        <Router>
+            <div className="row">
+            <div className="column">
+                    <Link className="link" to="/waste"><img  className="image" src={waste} alt="" /></Link>
+                </div>
+                <div className="column">
+                    <Link className="link" to="/pollution"><img  className="image" src={traffic} alt="" /></Link>
+                </div>
+                <div className="column">
+                    <Link className="link" to="/traffic"><img  className="image" src={pollution} alt="" /></Link>
+                </div>
+                <div className="column">
+                    <Link className="link" to="/"><img  className="image" src={other} alt="" /></Link>
+                </div>
         </div>
 
+        </Router>
+        
     )
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Footer from './Footer';
 function Welcome() {
     let style={
     width: "100%",
@@ -25,6 +26,7 @@ function Welcome() {
             <h5>Welcome! <hr />  Smart City Varanasi</h5>
             
         </div>
+        <Footer></Footer>
         </>
     )
 }
