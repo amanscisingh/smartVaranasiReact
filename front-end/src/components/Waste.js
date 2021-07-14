@@ -1,15 +1,24 @@
 import React from 'react'
 
 import Footer from './Footer';
-function Waste() {
+import { Loader } from "@googlemaps/js-api-loader"
+import initMap from './map';
+
+
+function Waste() {    
     return (
         <>
-        <div>
-            this is waste page
+        
+        <div id="map">
+            asas
         </div>
-        <Footer></Footer>
+        { initMap() }
+        <Footer />
         </>
     )
 }
 
+let map;
+
 export default Waste
+

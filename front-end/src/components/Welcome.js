@@ -26,7 +26,6 @@ function Welcome() {
             <h5>Welcome! <hr />  Smart City Varanasi</h5>
             
         </div>
-        <Footer></Footer>
         </>
     )
 }

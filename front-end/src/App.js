@@ -4,39 +4,26 @@ import Footer from './components/Footer';
 import Waste from './components/Waste';
 import Welcome from './components/Welcome';
 import waste from './images/waste.png';
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 function App() {
   return (
-    <div className="firstContainer">
-            <Router>
-            <Switch>
-                <Route exact path="/waste" render={()=>{
-                  return(
-                    <>
-                    <div>
-                    this is waste page
-
-                    </div>
-                    <Footer/>
-                    </>
-                  )}}/>
-                
-                <Route exact path="/" render={()=>{
-                  return(
-                    <>
-                    <Welcome/>
-                    
-                    <Footer/>
-                    </>
-                  )}}/>
-            </Switch>
-        </Router>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Top />
+          <Footer />
+        </Route>
+        <Route exact path="/waste">
+          <Waste />
+        </Route>
+      </Switch>
+    </Router>
+  
   );
 }
 
